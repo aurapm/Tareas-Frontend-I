@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.profile_picture {
+  display: block;
+  width: 300px;
+  margin: 30px auto;
+}
+
+h1{
+  color: #005677;
+  background-color: #C4C4C4;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  word-spacing: 8px;
+  text-align: center;
+  font-size: 35px;
+  font-style: normal; 
+  font-weight: 700;
+  padding: 20px 0px;
+  margin-bottom: 100px;
+}
+
+h2 {
+  color: #005677;
+  background-color: #C4C4C4;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  word-spacing: 8px;
+  text-indent: 10px;
+  padding: 5px 5px;
+  margin: 20px 0;
+}
+
+ul {
+  margin-left: 24px;
+  font-size: 15px;
+}
+
+ul p{
+  display: inline-flex;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.personal_data li {
+  list-style-type: disc;
+  margin-left: 24px;
+  line-height: 1.5;
+ }
+
+
+.basic_info {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.date_info {
+  font-weight: bold;
+}
+
+
+footer p{
+  background-color: #005677;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 5px 5px;
+  margin-top: 15px;
+  font-size: 20px;
+}
