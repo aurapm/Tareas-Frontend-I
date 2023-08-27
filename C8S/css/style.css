@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+/* Estilos barra de navegacion */
+.nav_container {
+  background-color: #222222;
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  padding: 1em 2em;  
+  width: 100%;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+}
+/* Fin Estilos barra de navegacion */
+
+ /* Logo */
+.nav_brand {
+  display: flex;
+  align-items: center;
+}
+
+.pizza{
+  width: 60px;
+}
+
+.text_logo {
+  font-weight: 700;
+  text-align: center;
+}
+
+header .text_logo {
+  font-size: 24px;
+  width: 132px;
+}
+
+.text_green{
+  color:#39B24A;
+}
+.text_white {
+  color:#FFFFFF;
+}
+.text_red {
+  color: #FC200C;
+}
+/* Fin logo */
+
+/* menu */
+.bx-menu {
+  color: #fff;
+  font-size: 24px;
+}
+
+.nav_elements{
+  display: flex;
+  align-items: center;
+}
+
+.nav_elements {
+  color: white;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 2em;
+}
+
+header .nav_elements ul {
+  display: none;
+}
+/* fin menu */
+
+
+/*  Main */
+.main_container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  gap: 2em;
+  width: 100%;
+  margin: 50px 5px;
+}
+/* Fin Main */
+
+/* Pizza podium */
+.pizza_container {
+  background-color: #FFF;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding: 25px 0 50px;
+}
+
+.pizza_container h1 {
+  font-size: 24px;  
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 3em;
+  margin-bottom: 1em; 
+}
+
+.pizza_podium ol li{
+  list-style: decimal;
+  font-weight: 700;
+  margin: 0.5em;
+}
+
+.pizza_falling{
+  width: 87px;
+  height: 121px;
+}
+/* Fin Pizza podium */
+
+/* container delivery */
+.container_delivery{
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+/* fin container delivery */
+
+/* image delivery */
+.image_delivery {
+  border-radius: 5px;
+  width: 100%;
+}
+/* fin image delivery */
+
+/* texto image delivery */
+.container_delivery p {
+  font-size: 24px;  
+  font-weight: 700;
+  position:absolute;
+  top: 1em;
+  left: 0.5em;
+}
+/* Fin texto image delivery */
+
+/* footer nav */
+footer .text_logo{
+  font-size: 20px;
+  width: 110px;
+}
+
+footer .nav_container {
+  padding: 0 1em;
+  width: 100%;
+}
+/* fin footer nav */
+
+@media (min-width: 600px) {
+  /* header navbar */
+  .bx-menu{
+    display: none;
+  }
+
+  header .nav_elements ul {
+    display: flex;
+    gap: 1em;
+  }
+
+  header .nav_elements li {
+    font-size: 16px;
+  }
+  /* fin header navbar */
+
+  /* logo */
+  .pizza{
+    width: 92px
+  }
+  /* fin logo */
+
+  /* main */
+  .main_container {
+    flex-direction: row;
+    gap: 0.25em;
+    padding: 0 25px;
+  } 
+  /* fin main */
+
+  /* pizza podium */
+  .pizza_container {
+    margin: 0;
+    padding: 20px 10px;
+    max-height: fit-content;
+  }
+
+  h2 {
+    margin-top: 0.5em;
+  }
+  /* fin pizza podium */
+
+  /* image delivery */
+  .container_delivery p {
+    left: 0;
+  }  
+  /* fin image delivery */
+  
+  /* footer nav */
+  footer .nav_container {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0.5em 1em;
+  }
+
+  footer .nav_elements li {
+    font-size: 16px;
+    line-height: 2em;
+  }
+  /* fin footer nav */
+}
+
