@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+/* header */
+header{
+  width: 100%;
+}
+
+.discount {
+  background-color: #D1891C;
+  padding: 0 15px;
+}
+
+.title {
+  background-color: #00669F;
+  color: #F3F3F3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  font-size: 40px;
+  padding: 15px;
+}
+/* fin header */
+
+/* plus icon */
+.icon_plus_container{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row-reverse;
+  position: absolute;
+  top: 670px;
+}
+.bx.bx-plus-circle {
+  color: #00669F;
+  font-size: 80px;
+}
+/* fin plus icon */
+
+/* card container */
+.cards_container {
+  margin: 50px auto 50px;
+  display: flex;
+  justify-content: space-around;
+  column-gap: 20px;
+  row-gap: 100px;
+  flex-wrap: wrap;
+}
+/* fin card container */
+
+/* Estilo de las card */
+.card {
+  width: 318px;
+  background-color: #F3F3F3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;  
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.images_card{
+  position: relative;
+  width: 318px; 
+  height: 194px; 
+} 
+
+.bx.bxs-heart {
+  position:absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 30px;
+  color: #CC2424;
+}
+
+.bg_card {
+  width: 318px;
+  height: 194px;
+}
+.hero_image {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  width: 120px;
+  border-radius: 100%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+}
+.card_text {
+  padding: 0 1.5em 1em;
+}
+
+h2 {
+  margin-top: 22px;
+  font-size: 2em;
+}
+
+.card_text p {
+  font-size: 1em;
+}
+
+button {
+  background-color: #00669F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 128px;
+  height: 48px;
+  margin: 0 auto  1.5em;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Termina estilo de las card */
+
+
+/* footer */
+footer {
+  position: relative;
+}
+
+footer p {
+  background-color: #00669F;
+  color: #FFF9F9;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.logo_github{
+  width: 80px;
+  position: absolute;
+  margin: auto;
+  top: 10px;
+  right: 10px;
+
+}
+
+/* fin footer */
+
+
+/* media query celular */
+
+@media(max-width: 425px) {
+  
+  .icon_plus_container{
+    height: 65px;
+    top: 545px;
+  }
+  .bx.bx-plus-circle {
+    font-size: 65px;
+  }
+
+  .cards_container{
+    row-gap: 80px;
+  }
+  .card{
+    width: 250px;
+    font-size: 12px;
+  }
+  
+  .images_card{
+    width: 250px;
+    height: 150px;
+  }
+  .bg_card{
+    width: 250px;
+    height: 150px;
+    
+  }
+  
+  .hero_image {
+    width: 100px;
+  }
+
+  h2{
+    margin-top: 30px;
+  }
+
+  button {
+    width: 100px;
+    height: 28px;
+  }
+
+  footer p {
+    font-size: 10px;
+  }
+  .logo_github {
+    width: 45px;
+  }
+}
+
+/* media query laptop */
+@media(min-width: 1024px) {
+  .cards_container {
+    margin: 85px auto 50px;
+  }
+
+  .icon_plus_container{
+    height: 80px;
+    top: 100px;
+  }
+
+}

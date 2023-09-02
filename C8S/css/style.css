@@ -166,6 +166,8 @@ footer .nav_container {
 }
 /* fin footer nav */
 
+
+/* Media query para celulares más grandes y laptops */
 @media (min-width: 600px) {
   /* header navbar */
   .bx-menu{
