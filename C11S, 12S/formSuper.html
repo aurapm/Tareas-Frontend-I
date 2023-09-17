@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="./styles/styles.css" rel="stylesheet" />
+    <link href="./styles/form.css" rel="stylesheet" />
+    <title>Heroes</title>
+  </head>
+  <body>
+    <header>
+      <p class="discount">20% de descuento en todos los productos!</p>
+      <a class="title" href="./index.html">
+        <img
+          class="icon_tienda"
+          src="./img/icon_tienda.png"
+          alt="icono de la tienda"
+        />
+        <h1>Nombre Tienda</h1>
+      </a>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="#" class="nav_item">Contacto</a></li>
+          <li><a href="#" class="nav_item">Registrarse</a></li>
+          <li><a href="#" class="nav_item">Ingresar</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="form_container">
+      <div class="form_title">
+        <h2>Añadí tu super!</h2>
+        <p>Agregá tu personaje favorito completando las opciones.</p>
+      </div>
+      <form>
+        <div class="field">
+          <label for="name">*Nombre</label>
+          <input type="text" name="name" id="name" minlength="3" required />
+        </div>
+
+        <div class="field">
+          <label for="especie">*Especie</label>
+          <select name="especie" required>
+            <optgroup label="Especies">
+              <option value="0" disabled selected>-- Especie --</option>
+              <option value="1">Especie 1</option>
+              <option value="2">Especie 2</option>
+              <option value="3">Especie 3</option>
+              <option value="4">Especie 4</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="date">Fecha</label>
+          <input type="date" name="date" id="date" required />
+        </div>
+
+        <div class="field">
+          <label for="loadFile">Agregar Foto</label>
+          <input
+            type="file"
+            name="picture"
+            id="loadFile"
+            accept=".jpg, .png"
+            multiple
+          />
+        </div>
+
+        <textarea name="description" placeholder="Descripción"></textarea>
+
+        <div class="buttons_container">
+          <div class="buttons">
+            <label for="powers">Poderes</label>
+            <p>
+              <input type="checkbox" name="powers" value="volar" />
+              Volar
+            </p>
+            <p>
+              <input type="checkbox" name="powers" value="SuperInteligencia" />
+              Super Inteligencia
+            </p>
+            <p>
+              <input type="checkbox" name="powers" value="vistaRayosLaser" />
+              Vista de rayo láser
+            </p>
+            <p>
+              <input type="checkbox" name="powers" value="billeteraGorda" />
+              Billetera gorda
+            </p>
+          </div>
+
+          <hr />
+
+          <div class="buttons">
+            <label for="characterType">Tipo de personaje</label>
+            <p>
+              <input type="radio" name="characterType" value="hero" />
+              Héroe / Heroina
+            </p>
+            <p>
+              <input type="radio" name="characterType" value="villain" />
+              Villano / Villana
+            </p>
+          </div>
+        </div>
+        <div class="container_add_button">
+          <button type="submit" class="add_button">Añadir</button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+  </body>
+</html>

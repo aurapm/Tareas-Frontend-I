@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  font-weight: 400;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* header */
+header{
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.discount {
+  background-color: #1CD1B0;
+  font-size: 12px;
+  height: 20px;
+  text-align: center;
+  padding: 2px;
+}
+
+.title {
+  background-color: #00669F;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title h1 {
+  color: #FFFFFF;
+  font-size: 24px;
+}
+
+.icon_tienda {
+  width: 80px;
+}
+
+.navbar{
+  background-color: #001D2D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 1em;
+  padding-right: 1em;
+}
+
+.nav_item {
+  color: #FFFFFF;
+}
+/* fin header */
+
+/* plus icon */
+.icon_plus_container{
+  width: 100%;
+  height: 65px;
+  display: flex;
+  flex-direction: row-reverse;
+  position: absolute;
+  top: 530px;
+}
+.bx.bxs-plus-circle {
+  color: #00669F;
+  font-size: 65px;
+}
+
+.bx.bxs-plus-circle:hover {
+  color: #001D2D;
+}
+
+/* fin plus icon */
+.content {
+  font-family: 'Roboto', sans-serif;
+}
+/* card container */
+.cards_container {
+  width: 80vw;
+  margin: 50px auto 50px;
+  display: flex;
+  justify-content: space-around;
+  column-gap: 20px;
+  row-gap: 80px;
+  flex-wrap: wrap;
+}
+/* fin card container */
+
+/* Estilo de las card */
+.card {
+  background-color: #F3F3F3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;  
+  font-size: 12px;
+  overflow: hidden;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.images_card{
+  position: relative;
+  height: 150px; 
+  width: 250px; 
+} 
+
+.bx.bxs-heart {
+  position:absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 30px;
+  color: #CC2424;
+}
+
+.bg_card{
+  width: 250px;
+  height: 150px;
+}
+
+.hero_image {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  width: 100px;
+  border-radius: 100%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+}
+.card_text {
+  padding: 0 1.5em 1em;
+}
+
+.card_title {
+  margin-top: 30px;
+  font-size: 2em;
+}
+
+.card_text p {
+  font-size: 1em;
+}
+
+.card_button {
+  background-color: #00669F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 28px;
+  width: 100px;
+  margin: 0 auto  1.5em;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Termina estilo de las card */
+
+
+/* footer */
+footer {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+
+footer p {
+  font-size: 10px;
+  background-color: #00669F;
+  color: #FFF9F9;
+  padding: 10px 0;
+  text-align: center;
+}
+/* fin footer */
+
+/* media tablet  */
+@media(min-width: 760px) {
+  .discount {
+    font-size: 16px;
+    height: 23px;
+    padding: 2px 15px;
+    text-align: left;
+  }
+  .title{
+    justify-content: flex-start;
+  }
+  .title h1 {
+    font-size: 30px;
+  }
+  
+  .icon_tienda {
+    width: 99px;
+  }
+
+  .navbar {
+    justify-content: flex-end;
+  }
+
+  .icon_plus_container{
+    height: 80px;
+    top: 590px;
+    right: 15px;
+  }
+
+  .bx.bxs-plus-circle {
+    font-size: 80px;
+  }
+
+  .cards_container{
+    row-gap: 100px;
+  }
+
+
+  .card_title {
+    margin-top: 22px;
+  }
+
+  .card_button {
+    height: 48px;
+    width: 128px;
+  }
+
+  footer p {
+    font-size: 16px;
+  }
+}
+
+/* media query laptop */
+@media(min-width: 1024px) {
+  .icon_plus_container{
+    height: 80px;
+    top: 350px;
+  }
+
+  .cards_container {
+    margin: 85px auto 50px;
+  }
+
+  .card{
+    font-size: 16px;
+    width: 318px;
+  }
+
+  
+  .images_card{
+    height: 194px;
+    width: 318px;
+  }
+
+  .bg_card{
+    height: 194px;
+    width: 318px;
+  }
+
+  .hero_image {
+    width: 120px;
+  }
+}
