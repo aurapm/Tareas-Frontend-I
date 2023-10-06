@@ -190,7 +190,7 @@ footer p {
   font-family: var(--title-font);
   font-size: 0.8em;
   text-align: center;
-  padding: 10px;
+  padding-top: 10px;
 }
 /* end footer */
 
