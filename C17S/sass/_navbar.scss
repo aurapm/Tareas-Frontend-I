@@ -1,0 +1,58 @@
+@use 'variables';
+
+.navbar {
+  padding: 10px 0;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  input{
+    display: none;
+  }
+
+  .bx.bx-menu {
+    font-size: 1.8em;  
+  }
+
+  &__list{
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 120px;
+    height: 140px;
+    padding: 5px 10px;
+    z-index: 10;
+    background-color: variables.$bg-third;
+  }
+  
+  input:checked + &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    row-gap: 1em;
+  }
+
+  @media (variables.$tablet) {
+    .bx.bx-menu {
+      display: none;
+    }
+
+    &__list, input:checked + &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      column-gap: 1em;
+      width: auto;
+      height: auto;
+      background-color: #fff;
+      position: unset;
+      padding: 0;
+  } 
+  }
+}

@@ -1,0 +1,66 @@
+@use 'variables';
+
+.navbar__list {
+  a{
+    position: relative;
+  }
+  a::before{
+    content:'';
+    background: variables.$shadow;
+    position:absolute;
+    bottom:-10px;
+    height: 2px;
+    width: 0; 
+    transition: width 0.5s ease-in-out; 
+  }
+  a:hover::before{
+    width: 100%;
+}
+}
+
+.content-left {
+  button{
+    transition: all 0.5s ease-in-out;
+  }
+  button:hover {
+    background-color: variables.$color-primary;
+    color: #fff;
+    border: 1px solid black;
+  }
+}
+
+.card {
+  transition: all 0.8s ease-in-out, transform 0.5s ease-in-out;
+  &:hover {
+    transform: scale(1.5);
+    z-index: 10;
+    border: 1px dotted black;
+    background-color: variables.$bg-third;
+    box-shadow: -10px -5px 0 0 variables.$shadow;
+    
+    @media(variables.$laptop){
+      transform: scale(1.2);
+    }
+    .card__top{
+      box-shadow:  -5px 0px 0px 0px variables.$shadow;     
+      transition: all 0.8s ease-in-out;
+    }
+
+    .card__text-shadow{
+      width: 1.4em;
+      transition: width 0.8s ease-in-out; 
+    }
+  }  
+}
+
+footer {
+  a{
+    transition: all 0.5s ease-in-out;
+  }
+  a:hover{
+    padding: 15px;
+    font-size: 2em;
+    box-shadow:  -5px 0px 0px 0px variables.$shadow;
+  }
+}
+

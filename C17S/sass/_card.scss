@@ -1,0 +1,54 @@
+@use 'variables';
+
+.card {
+  background-color: variables.$bg-secondary;
+  width: 200px;
+  height: 200px;
+  @media (variables.$tablet) {
+    width: 270px;
+    height: 270px;    
+  }
+  &__top{
+    width: 4em;
+    height: 4em;
+    border: 1px solid black;
+    border-radius: 100%;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    position: relative;
+    top: 0.5em;
+    left: 0.8em;
+    span{
+      font-size: 1.5em;
+    }
+    @media (variables.$tablet) {
+      width: 2.5em;
+      height: 2.5em;
+      span{
+        font-size: 1em;
+      }
+    }
+  }
+  &__text{
+    padding: 20px 20px 20px;
+    position: relative;
+    z-index: 1;
+    h3{
+      font-size: 1.5em;
+      @media(variables.$tablet){
+        font-size: 1.2em;
+      }
+    }
+
+    &-shadow{
+      position: absolute;
+      background-color: variables.$shadow;
+      height: 0.75em;
+      width: 0;
+      //width: 1.4em;
+      left: 20px;
+      z-index: -1;
+    }
+  }
+}
